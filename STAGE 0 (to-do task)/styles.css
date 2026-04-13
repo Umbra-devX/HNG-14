@@ -1,0 +1,144 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button {
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: inherit;
+  color: #6b7280;
+  font-size: inherit;
+}
+button:focus,
+input:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8fafc;
+  color: #111827;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0.5rem;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+  width: 100%;
+  max-width: 450px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 18px;
+}
+
+.desc {
+  font-size: 0.9em;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.badge {
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.high { 
+  color: #ef4444; 
+  background: #ef444420;}
+.medium { 
+  color: #f59e0b; 
+  background: #f59e0b20;}
+.low { 
+  color: #22c55e; 
+  background: #22c55e20;}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: start;
+  list-style: none;
+}
+.tag {
+  background: #f8fafc;
+  color: #6b7280;
+  border: 1px solid #e5e7eb;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+.detail-main-container{
+  justify-content: space-between;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.detail-sub-container{
+  display: flex;
+  font-size: 0.8rem;
+  color: #6b7280;
+  gap: 1em;
+}
+.status-container{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  font-size: 0.8em;
+  gap: 1em;
+}
+.status{
+  color: #3b82f6;
+  border-radius: 0.5em;
+  padding: 0.25em 0.5em;
+  background-color: #3b82f610;
+}
+.checkbox-container{
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  flex-direction: row;
+  color: #111827;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+#checkbox{
+  transform: scale(1.3);
+  cursor: inherit;
+  color: inherit;
+}
+.checkbox-container label{
+  font-size: 1em;
+  cursor: inherit;
+}
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  color: #6b7280;
+  font-size: 0.9em;
+}
+.btn-container{
+  display: flex;
+  gap: 0.5rem;
+}
