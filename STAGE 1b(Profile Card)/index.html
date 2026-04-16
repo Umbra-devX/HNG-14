@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<article data-testid="test-profile-card">
+
+  <div class="card-accent-bar" aria-hidden="true"></div>
+
+  <div class="card-body">
+
+    <div class="card-left">
+
+      <figure>
+        <div class="avatar-wrap">
+          <img
+            data-testid="test-user-avatar"
+            src="https://i.pravatar.cc/120?img=47"
+            alt="Amara Ogbanje, frontend engineer based in Lagos, Nigeria"
+            width="120"
+            height="120"
+          />
+        </div>
+        <figcaption>Frontend Engineer · Lagos, NG</figcaption>
+      </figure>
+
+      <nav data-testid="test-user-social-links" aria-label="Social media links">
+        <span class="social-label">Connect</span>
+        <ul>
+          <li>
+            <a
+              data-testid="test-user-social-twitter"
+              href="https://twitter.com/chidi_builds"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Twitter / X
+            </a>
+          </li>
+          <li>
+            <a
+              data-testid="test-user-social-github"
+              href="https://github.com/chidi-builds"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a
+              data-testid="test-user-social-linkedin"
+              href="https://linkedin.com/in/chidi-okeke"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+
+    <div class="card-right">
+
+      <header>
+        <span class="name-label" aria-hidden="true">Profile</span>
+        <h2 data-testid="test-user-name">
+          Amara Ogbanje
+        </h2>
+      </header>
+
+      <p data-testid="test-user-bio">
+        I write HTML that actually means something and CSS that doesn't apologise for itself. Three years deep into frontend work — mostly wrestling layout bugs at 11 pm and winning. When I'm not pushing pixels, I'm reviewing PRs nobody asked me to review. Based in Lagos; powered by jollof rice and spite.
+      </p>
+
+      <div class="time-block">
+        <span class="time-label-text" aria-hidden="true">
+          Epoch ms
+        </span>
+        <time
+          data-testid="test-user-time"
+          id="epoch-time"
+          aria-live="polite"
+          aria-atomic="true"
+        ></time>
+      </div>
+
+      <div class="lists-grid">
+
+        <section class="list-section" aria-labelledby="hobbies-heading">
+          <h2 id="hobbies-heading" class="section-title">
+            Hobbies
+          </h2>
+          <ul data-testid="test-user-hobbies">
+            <li>Nitpicking other people's CSS</li>
+            <li>Watching football &amp; arguing about it</li>
+            <li>Building side projects I never finish</li>
+            <li>Reading tech Twitter at 1 am</li>
+            <li>Overthinking variable names</li>
+          </ul>
+        </section>
+
+        <section class="list-section" aria-labelledby="dislikes-heading">
+          <h2 id="dislikes-heading" class="section-title">
+            Dislikes
+          </h2>
+          <ul data-testid="test-user-dislikes">
+            <li>PRs with zero context</li>
+            <li>Meetings that should've been emails</li>
+            <li>div soup with no semantic meaning</li>
+            <li>Designers who ignore mobile</li>
+            <li>Slow CI pipelines on a Friday</li>
+          </ul>
+        </section>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</article>
+
+<script src="app.js"></script>
+
+</body>
+</html>
