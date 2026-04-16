@@ -142,3 +142,32 @@ body {
   display: flex;
   gap: 0.5rem;
 }
+.hidden {
+  display: none;
+}
+
+.overdue {
+  color: #ef4444;
+  font-size: 0.8rem;
+}
+
+.priority-indicator.high { border-left: 4px solid #ef4444; }
+.priority-indicator.medium { border-left: 4px solid #f59e0b; }
+.priority-indicator.low { border-left: 4px solid #22c55e; }
+
+.done .title {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.editing input,
+.editing textarea,
+.editing select {
+  width: 100%;
+  font-size: inherit;
+}
+
+#desc-section {
+  max-height: 40px;
+  overflow: hidden;
+}
