@@ -1,0 +1,59 @@
+:root {
+  --purple: #7C5DFA;
+  --purple-light: #9277FF;
+  --dark-navy: #141625;
+  --dark-card: #1E2139;
+  --dark-input: #252945;
+  --light-bg: #F8F8FB;
+  --light-card: #FFFFFF;
+  --light-input: #FFFFFF;
+  --red: #EC5757;
+  --red-light: #FF9797;
+  --green: #33D69F;
+  --orange: #FF8F00;
+  --grey: #888EB0;
+  --light-grey: #DFE3FA;
+  --medium-grey: #858BB2;
+
+  --font: 'League Spartan', sans-serif;
+}
+
+[data-theme="light"] {
+  --bg: #F8F8FB;
+  --card-bg: #FFFFFF;
+  --input-bg: #FFFFFF;
+  --sidebar-bg: #373B53;
+  --text-primary: #0C0E16;
+  --text-secondary: #888EB0;
+  --text-muted: #7E88C3;
+  --border: #DFE3FA;
+  --invoice-card-hover: #F9FAFE;
+  --filter-bg: #FFFFFF;
+  --modal-overlay: rgba(0,0,0,0.5);
+  --input-border: #DFE3FA;
+  --input-label: #7E88C3;
+  --total-bg: #373B53;
+  --total-text: #FFFFFF;
+  --delete-hover: #FF9797;
+  --chevron: #7C5DFA;
+}
+
+[data-theme="dark"] {
+  --bg: #141625;
+  --card-bg: #1E2139;
+  --input-bg: #252945;
+  --sidebar-bg: #1E2139;
+  --text-primary: #FFFFFF;
+  --text-secondary: #DFE3FA;
+  --text-muted: #888EB0;
+  --border: #252945;
+  --invoice-card-hover: #252945;
+  --filter-bg: #252945;
+  --modal-overlay: rgba(0,0,0,0.7);
+  --input-border: #252945;
+  --input-label: #888EB0;
+  --total-bg: #0C0E16;
+  --total-text: #FFFFFF;
+  --delete-hover: #FF9797;
+  --chevron: #7C5DFA;
+}

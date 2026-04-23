@@ -1,0 +1,364 @@
+.invoice-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .invoice-detail {
+    padding-bottom: 0;
+    gap: 1.5rem;
+  }
+}
+
+/* Back Button */
+.invoice-detail__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: -0.25px;
+  color: var(--text-primary);
+  padding: 0;
+  margin-bottom: 0.5rem;
+  transition: color 0.2s;
+}
+
+.invoice-detail__back:hover {
+  color: var(--text-secondary);
+}
+
+/* Status Bar */
+.invoice-detail__status-bar {
+  background: var(--card-bg);
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.invoice-detail__status-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .invoice-detail__status-left {
+    width: auto;
+    justify-content: flex-start;
+  }
+}
+
+.invoice-detail__status-label {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+}
+
+.invoice-detail__actions {
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .invoice-detail__actions {
+    display: flex;
+  }
+}
+
+/* Body */
+.invoice-detail__body {
+  background: var(--card-bg);
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  .invoice-detail__body {
+    padding: 3rem;
+    gap: 2.5rem;
+  }
+}
+
+/* Top */
+.invoice-detail__top {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  .invoice-detail__top {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.invoice-detail__id {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  letter-spacing: -0.31px;
+  color: var(--text-primary);
+}
+
+.invoice-detail__hash {
+  color: var(--purple);
+}
+
+.invoice-detail__desc {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  margin-top: 0.25rem;
+}
+
+.invoice-detail__sender-address {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.8125rem;
+  line-height: 1.5rem;
+  color: var(--text-secondary);
+}
+
+@media (min-width: 768px) {
+  .invoice-detail__sender-address {
+    text-align: right;
+  }
+}
+
+/* Meta Grid */
+.invoice-detail__meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .invoice-detail__meta {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.invoice-detail__meta-group--client {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 768px) {
+  .invoice-detail__meta-group--client {
+    grid-column: auto;
+  }
+}
+
+.invoice-detail__label {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+}
+
+.invoice-detail__value {
+  font-size: 0.9375rem;
+  color: var(--text-primary);
+}
+
+.invoice-detail__client-address {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.8125rem;
+  line-height: 1.5rem;
+  color: var(--text-secondary);
+  margin-top: 0.5rem;
+}
+
+/* Items Table */
+.invoice-detail__items {
+  background: var(--bg);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+[data-theme="dark"] .invoice-detail__items {
+  background: var(--dark-input);
+}
+
+.invoice-detail__items-header {
+  display: none;
+  padding: 1.5rem 2rem;
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .invoice-detail__items-header {
+    display: grid;
+  }
+
+  .invoice-detail__items-header span:nth-child(2),
+  .invoice-detail__items-header span:nth-child(3) {
+    text-align: center;
+  }
+
+  .invoice-detail__items-header span:nth-child(4) {
+    text-align: right;
+  }
+}
+
+.invoice-detail__items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.invoice-detail__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  font-size: 0.8125rem;
+}
+
+@media (min-width: 768px) {
+  .invoice-detail__item {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem 2rem;
+  }
+}
+
+.invoice-detail__item-name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.invoice-detail__item-name .fw-bold {
+  color: var(--text-primary);
+  font-size: 0.8125rem;
+}
+
+.invoice-detail__item-qty-mobile {
+  color: var(--text-secondary);
+  font-weight: 700;
+}
+
+.invoice-detail__item-qty,
+.invoice-detail__item-price {
+  display: none;
+  color: var(--text-secondary);
+  font-weight: 700;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .invoice-detail__item-qty,
+  .invoice-detail__item-price {
+    display: block;
+  }
+}
+
+.invoice-detail__item-total {
+  color: var(--text-primary);
+  text-align: right;
+}
+
+/* Total */
+.invoice-detail__total {
+  background: var(--total-bg);
+  color: var(--total-text);
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8125rem;
+}
+
+@media (min-width: 768px) {
+  .invoice-detail__total {
+    padding: 1.5rem 2rem;
+  }
+}
+
+.invoice-detail__total-amount {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* Mobile Actions */
+.invoice-detail__mobile-actions {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--card-bg);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  box-shadow: 0 -4px 12px rgba(0,0,0,0.1);
+  z-index: 90;
+}
+
+@media (min-width: 768px) {
+  .invoice-detail__mobile-actions {
+    display: none;
+  }
+}
+
+/* Not Found */
+.invoice-detail__not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem;
+  text-align: center;
+}
+
+/* Button variants - add to global.css */
+.btn--secondary {
+  background: var(--light-grey);
+  color: var(--medium-grey);
+}
+
+[data-theme="dark"] .btn--secondary {
+  background: var(--dark-input);
+  color: var(--text-secondary);
+}
+
+.btn--secondary:hover {
+  background: var(--border);
+}
+
+[data-theme="dark"] .btn--secondary:hover {
+  background: #fff;
+  color: var(--medium-grey);
+}
+
+.btn--danger {
+  background: var(--red);
+  color: #fff;
+}
+
+.btn--danger:hover {
+  background: var(--red-light);
+}
